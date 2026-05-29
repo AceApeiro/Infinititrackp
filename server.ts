@@ -30,8 +30,7 @@ if (!fs.existsSync(uploadsDir)) {
 } 
   app.use('/uploads', express.static(uploadsDir));
 
-  const TOKEN_FILE_PATH = path.join(process.cwd(), 'google-token.json');
-  let currentAccessToken: string | null = null;
+const filePath = path.join('/tmp/uploads',safeName);  let currentAccessToken: string | null = null;
   let tokenSavedAt: string | null = null;
 
   function loadStoredToken() {
