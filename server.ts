@@ -117,7 +117,7 @@ async function startServer() {
     fs.writeFileSync(localLogsPath, JSON.stringify(localLogs, null, 2));
 
     const webhookUrl =
-      'https://script.google.com/macros/s/AKfycbzavHfRHlnQcaXGglzV3ogI5x2ylqeGgCu0Ujz5XZHkgBI621MhrKJLIqzo-QbHjIkY/exec';
+      'https://script.google.com/macros/s/AKfycbwcZOnPH8qjplnjEQar4tnIbdnPclpa-detNowoWySTI19kibmA3FzfmqT9rTJ0gRdx/exec';
 
     let webhookSuccess = false;
     let webhookNotes = '';
